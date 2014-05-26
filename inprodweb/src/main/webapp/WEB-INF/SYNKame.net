@@ -1,0 +1,6 @@
+
+C:\naliniprograms\IPTester>c:\progra~1\wireshark\tshark -r google.com.pcapng -R "tcp.port==80 && tcp.flags.syn==1 && tcp.flags.ack==0" -T fields -e frame.number -e frame.time -e ipv6.src -e ipv6.dst -e tcp.srcport -e tcp.dstport  
+1	May 19, 2014 06:30:49.922385001	2605:6f00:877::31da:4b3b	2a03:2880:2110:9f07:face:b00c:0:1	49541	80
+8	May 19, 2014 06:30:50.321525002	2605:6f00:877::31da:4b3b	2001:200:dff:fff1:216:3eff:feb1:44d7	49542	80
+9	May 19, 2014 06:30:51.321525003	2605:6f00:877::31da:4b3b	2001:200:dff:fff1:216:3eff:feb1:44d7	49542	80
+12	May 19, 2014 06:30:52.321525004	1.2.3.4	2.3.4.5	495	88
